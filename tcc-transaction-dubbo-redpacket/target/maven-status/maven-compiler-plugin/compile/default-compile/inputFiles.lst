@@ -1,0 +1,8 @@
+G:\bbshop\5.30\tcc-transaction-dubbo-redpacket\src\main\java\org\mengyun\tcctransaction\sample\dubbo\redpacket\domain\entity\RedPacketAccount.java
+G:\bbshop\5.30\tcc-transaction-dubbo-redpacket\src\main\java\org\mengyun\tcctransaction\sample\dubbo\redpacket\infrastructure\dao\TradeOrderDao.java
+G:\bbshop\5.30\tcc-transaction-dubbo-redpacket\src\main\java\org\mengyun\tcctransaction\sample\dubbo\redpacket\domain\repository\TradeOrderRepository.java
+G:\bbshop\5.30\tcc-transaction-dubbo-redpacket\src\main\java\org\mengyun\tcctransaction\sample\dubbo\redpacket\service\RedPacketAccountServiceImpl.java
+G:\bbshop\5.30\tcc-transaction-dubbo-redpacket\src\main\java\org\mengyun\tcctransaction\sample\dubbo\redpacket\infrastructure\dao\RedPacketAccountDao.java
+G:\bbshop\5.30\tcc-transaction-dubbo-redpacket\src\main\java\org\mengyun\tcctransaction\sample\dubbo\redpacket\domain\entity\TradeOrder.java
+G:\bbshop\5.30\tcc-transaction-dubbo-redpacket\src\main\java\org\mengyun\tcctransaction\sample\dubbo\redpacket\service\RedPacketTradeOrderServiceImpl.java
+G:\bbshop\5.30\tcc-transaction-dubbo-redpacket\src\main\java\org\mengyun\tcctransaction\sample\dubbo\redpacket\domain\repository\RedPacketAccountRepository.java
