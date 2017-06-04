@@ -1,8 +1,0 @@
-G:\bbshop\5.30\tcc-transaction-spring\src\main\java\org\mengyun\tcctransaction\spring\support\TccTransactionConfigurator.java
-G:\bbshop\5.30\tcc-transaction-spring\src\main\java\org\mengyun\tcctransaction\spring\support\TccBeanPostProcessor.java
-G:\bbshop\5.30\tcc-transaction-spring\src\main\java\org\mengyun\tcctransaction\spring\TccCompensableAspect.java
-G:\bbshop\5.30\tcc-transaction-spring\src\main\java\org\mengyun\tcctransaction\spring\TccTransactionContextAspect.java
-G:\bbshop\5.30\tcc-transaction-spring\src\main\java\org\mengyun\tcctransaction\spring\repository\SpringJdbcTransactionRepository.java
-G:\bbshop\5.30\tcc-transaction-spring\src\main\java\org\mengyun\tcctransaction\spring\recover\RecoverScheduledJob.java
-G:\bbshop\5.30\tcc-transaction-spring\src\main\java\org\mengyun\tcctransaction\spring\support\TccApplicationContext.java
-G:\bbshop\5.30\tcc-transaction-spring\src\main\java\org\mengyun\tcctransaction\spring\recover\DefaultRecoverConfig.java

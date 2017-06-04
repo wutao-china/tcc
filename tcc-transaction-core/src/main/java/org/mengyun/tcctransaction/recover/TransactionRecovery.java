@@ -113,7 +113,7 @@ public class TransactionRecovery {
                     transaction.rollback();
                 }
                 
-                // 其他情况下，超时没处理的事务日志直接删除
+                // 已成功恢复处理或其他情况，超时没处理的事务日志直接删除
                 transactionConfigurator.getTransactionRepository().delete(transaction);
             } catch (Throwable e) {
                 logger.warn(String.format("recover failed, txid:%s, status:%s,retried count:%d", transaction.getXid(), transaction.getStatus().getId(), transaction.getRetriedCount()), e);
