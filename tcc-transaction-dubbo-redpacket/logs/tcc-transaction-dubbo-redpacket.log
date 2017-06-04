@@ -1,0 +1,749 @@
+[INFO ][20170604 13:27:00,808][AbstractApplicationContext:512] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1be4a61a: startup date [Sun Jun 04 13:27:00 CST 2017]; root of context hierarchy
+[INFO ][20170604 13:27:00,944][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [config/spring/local/appcontext.xml]
+[INFO ][20170604 13:27:01,595][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-dubbo-redpacket/target/classes/config/spring/local/appcontext-service-datasource.xml]
+[INFO ][20170604 13:27:01,730][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-dubbo-redpacket/target/classes/config/spring/local/appcontext-service-dao.xml]
+[INFO ][20170604 13:27:01,767][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-dubbo-redpacket/target/classes/config/spring/local/appcontext-service-provider.xml]
+[INFO ][20170604 13:27:01,893][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20170604 13:27:01,996][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-spring/target/classes/tcc-transaction.xml]
+[INFO ][20170604 13:27:02,399][PropertiesLoaderSupport:172] Loading properties file from class path resource [sample-dubbo-redpacket.properties]
+[INFO ][20170604 13:27:02,548][DefaultListableBeanFactory:603] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1a43bd4: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,redPacketAccountRepository,tradeOrderRepository,redPacketAccountService,redPacketTradeOrderService,org.springframework.aop.config.internalAutoProxyCreator,jdbc,redPacketDataSource,tccDataSource,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,sqlSessionFactory,redPacketAccountDao,tradeOrderDao,transactionRepository,sample-dubbo-redpacket,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,redPacketRpcZk,dubbo,com.alibaba.dubbo.config.ProviderConfig,org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService,org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService,tccApplicationContext,tccBeanPostProcessor,tccTransactionConfigurator,transactionRecovery,compensableTransactionInterceptor,resourceCoordinatorInterceptor,tccCompensableAspect,transactionContextAspect,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,recoverScheduler,recoverScheduledJob,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20170604 13:27:03,168][Slf4jMLog$Slf4jMLogger$InfoLogger:203] MLog clients using slf4j logging.
+[INFO ][20170604 13:27:03,508][Slf4jMLog$Slf4jMLogger$InfoLogger:203] Initializing c3p0-0.9.5-pre10 [built 06-November-2014 02:02:55 -0800; debug? true; trace: 10]
+[INFO ][20170604 13:27:03,717][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20170604 13:27:06,791][StdSchedulerFactory:1179] Using default implementation for ThreadExecutor
+[INFO ][20170604 13:27:06,837][SchedulerSignalerImpl:60] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ][20170604 13:27:06,848][QuartzScheduler:229] Quartz Scheduler v.1.8.6 created.
+[INFO ][20170604 13:27:06,850][RAMJobStore:139] RAMJobStore initialized.
+[INFO ][20170604 13:27:06,853][QuartzScheduler:255] Scheduler meta-data: Quartz Scheduler (v1.8.6) 'recoverScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[INFO ][20170604 13:27:06,854][StdSchedulerFactory:1324] Quartz scheduler 'recoverScheduler' initialized from an externally provided properties instance.
+[INFO ][20170604 13:27:06,854][StdSchedulerFactory:1328] Quartz scheduler version: 1.8.6
+[INFO ][20170604 13:27:06,857][QuartzScheduler:2267] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@650b287f
+[INFO ][20170604 13:27:07,087][QuartzScheduler:519] Scheduler recoverScheduler_$_NON_CLUSTERED started.
+[INFO ][20170604 13:27:07,107][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20170604 13:27:07,112][ServiceBean:107]  [DUBBO] The service ready on spring started. service: org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:27:07,313][ServiceConfig:510]  [DUBBO] Export dubbo service org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:27:07,314][ServiceConfig:470]  [DUBBO] Export dubbo service org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService to url dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9416&retries=0&side=provider&timeout=60000&timestamp=1496554027137, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:27:07,314][ServiceConfig:481]  [DUBBO] Register dubbo service org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService url dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9416&retries=0&side=provider&timeout=60000&timestamp=1496554027137 to registry registry://192.168.1.161:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-redpacket&dubbo=2.5.3&file=./.dubbo/rpc-cache&pid=9416&register=true&registry=zookeeper&session=180000&subscribe=false&timeout=30000&timestamp=1496554027123, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:27:07,716][AbstractServer:69]  [DUBBO] Start NettyServer bind /0.0.0.0:20993, export /192.168.11.115:20993, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:27:07,772][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20170604 13:27:07,784][Environment:100] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+[INFO ][20170604 13:27:07,785][Environment:100] Client environment:host.name=SQIYHIFJCNC9FJ2
+[INFO ][20170604 13:27:07,785][Environment:100] Client environment:java.version=1.7.0_80
+[INFO ][20170604 13:27:07,785][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20170604 13:27:07,785][Environment:100] Client environment:java.home=D:\Program Files\Java\jdk1.7.0_80\jre
+[INFO ][20170604 13:27:07,785][Environment:100] Client environment:java.class.path=G:\project\tcc\tcc\tcc-transaction-dubbo-redpacket\target\test-classes;G:\project\tcc\tcc\tcc-transaction-dubbo-redpacket\target\classes;G:\project\tcc\tcc\tcc-transaction-dubbo-redpacket-api\target\classes;G:\project\tcc\tcc\tcc-transaction-api\target\classes;G:\project\tcc\tcc\tcc-transaction-spring\target\classes;G:\project\tcc\tcc\tcc-transaction-core\target\classes;G:\bbshop\babasportMaven\repository\com\google\guava\guava\19.0\guava-19.0.jar;G:\bbshop\babasportMaven\repository\com\esotericsoftware\kryo\4.0.0\kryo-4.0.0.jar;G:\bbshop\babasportMaven\repository\com\esotericsoftware\reflectasm\1.11.3\reflectasm-1.11.3.jar;G:\bbshop\babasportMaven\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;G:\bbshop\babasportMaven\repository\com\esotericsoftware\minlog\1.3.0\minlog-1.3.0.jar;G:\bbshop\babasportMaven\repository\org\objenesis\objenesis\2.2\objenesis-2.2.jar;G:\bbshop\babasportMaven\repository\redis\clients\jedis\2.8.0\jedis-2.8.0.jar;G:\bbshop\babasportMaven\repository\org\apache\commons\commons-pool2\2.3\commons-pool2-2.3.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-aop\3.2.12.RELEASE\spring-aop-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-context-support\3.2.12.RELEASE\spring-context-support-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\quartz-scheduler\quartz\1.8.6\quartz-1.8.6.jar;G:\bbshop\babasportMaven\repository\org\slf4j\slf4j-api\1.6.0\slf4j-api-1.6.0.jar;G:\bbshop\babasportMaven\repository\com\101tec\zkclient\0.4\zkclient-0.4.jar;G:\bbshop\babasportMaven\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;G:\bbshop\babasportMaven\repository\org\slf4j\slf4j-log4j12\1.6.1\slf4j-log4j12-1.6.1.jar;G:\bbshop\babasportMaven\repository\jline\jline\0.9.94\jline-0.9.94.jar;G:\bbshop\babasportMaven\repository\junit\junit\4.11\junit-4.11.jar;G:\bbshop\babasportMaven\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;G:\bbshop\babasportMaven\repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;G:\bbshop\babasportMaven\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;G:\bbshop\babasportMaven\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;G:\bbshop\babasportMaven\repository\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-context\3.2.12.RELEASE\spring-context-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-core\3.2.12.RELEASE\spring-core-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-expression\3.2.12.RELEASE\spring-expression-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;G:\bbshop\babasportMaven\repository\com\mchange\c3p0\0.9.5-pre10\c3p0-0.9.5-pre10.jar;G:\bbshop\babasportMaven\repository\com\mchange\mchange-commons-java\0.2.8\mchange-commons-java-0.2.8.jar;G:\bbshop\babasportMaven\repository\mysql\mysql-connector-java\5.1.33\mysql-connector-java-5.1.33.jar;G:\bbshop\babasportMaven\repository\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;G:\bbshop\babasportMaven\repository\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;G:\bbshop\babasportMaven\repository\org\aspectj\aspectjrt\1.6.11\aspectjrt-1.6.11.jar;G:\bbshop\babasportMaven\repository\org\aspectj\aspectjweaver\1.6.8\aspectjweaver-1.6.8.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-web\3.2.12.RELEASE\spring-web-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-webmvc\3.2.12.RELEASE\spring-webmvc-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-beans\3.2.12.RELEASE\spring-beans-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-jdbc\3.2.12.RELEASE\spring-jdbc-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-tx\3.2.12.RELEASE\spring-tx-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\apache\commons\commons-lang3\3.2.1\commons-lang3-3.2.1.jar
+[INFO ][20170604 13:27:07,786][Environment:100] Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_80\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;G:\bbshop\apache-maven-3.3.3\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.7.0_80\bin;D:\Program Files\Java\jdk1.7.0_80\bin;D:\Program Files\Java\jdk1.7.0_80\jre\bin;D:\Program Files\Git\cmd;.
+[INFO ][20170604 13:27:07,786][Environment:100] Client environment:java.io.tmpdir=C:\Users\Administrator.SQIYHIFJCNC9FJ2\AppData\Local\Temp\
+[INFO ][20170604 13:27:07,786][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20170604 13:27:07,786][Environment:100] Client environment:os.name=Windows 7
+[INFO ][20170604 13:27:07,786][Environment:100] Client environment:os.arch=amd64
+[INFO ][20170604 13:27:07,787][Environment:100] Client environment:os.version=6.1
+[INFO ][20170604 13:27:07,787][Environment:100] Client environment:user.name=Administrator
+[INFO ][20170604 13:27:07,787][Environment:100] Client environment:user.home=C:\Users\Administrator.SQIYHIFJCNC9FJ2
+[INFO ][20170604 13:27:07,787][Environment:100] Client environment:user.dir=G:\project\tcc\tcc\tcc-transaction-dubbo-redpacket
+[INFO ][20170604 13:27:07,789][ZooKeeper:438] Initiating client connection, connectString=192.168.1.161:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@7a768b9f
+[INFO ][20170604 13:27:07,815][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.161/192.168.1.161:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN ][20170604 13:27:28,820][ClientCnxn$SendThread:1102] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170604 13:27:29,934][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.161/192.168.1.161:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN ][20170604 13:27:50,939][ClientCnxn$SendThread:1102] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170604 13:27:52,039][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.161/192.168.1.161:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170604 13:28:00,151][Slf4jMLog$Slf4jMLogger$InfoLogger:203] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 30000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge35f9oviffbe1jk1gwb|62b81b64, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge35f9oviffbe1jk1gwb|62b81b64, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.1.215:3306/TCC?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20170604 13:29:22,092][AbstractApplicationContext:512] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1be4a61a: startup date [Sun Jun 04 13:29:22 CST 2017]; root of context hierarchy
+[INFO ][20170604 13:29:22,212][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [config/spring/local/appcontext.xml]
+[ERROR][20170604 13:29:22,393][DubboProvider:31] == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config/spring/local/appcontext.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:409)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:539)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at tcc.DubboProvider.main(DubboProvider.java:28)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:687)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:435)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1735)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:1234)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:778)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:1038)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2988)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:389)
+	... 14 more
+[INFO ][20170604 13:31:20,104][AbstractApplicationContext:512] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@40550344: startup date [Sun Jun 04 13:31:20 CST 2017]; root of context hierarchy
+[INFO ][20170604 13:31:20,235][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [config/spring/local/appcontext.xml]
+[ERROR][20170604 13:31:20,401][DubboProvider:31] == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config/spring/local/appcontext.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:409)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:539)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at tcc.DubboProvider.main(DubboProvider.java:28)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:687)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:435)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1735)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:1234)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:778)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:1038)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2988)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:389)
+	... 14 more
+[INFO ][20170604 13:34:36,255][AbstractApplicationContext:512] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c04fe90: startup date [Sun Jun 04 13:34:36 CST 2017]; root of context hierarchy
+[INFO ][20170604 13:34:36,375][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [config/spring/local/appcontext.xml]
+[ERROR][20170604 13:34:36,561][DubboProvider:31] == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config/spring/local/appcontext.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:409)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:539)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at tcc.DubboProvider.main(DubboProvider.java:28)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:687)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:435)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1735)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:1234)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:778)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:1038)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2988)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:389)
+	... 14 more
+[INFO ][20170604 13:36:08,280][AbstractApplicationContext:512] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c04fe90: startup date [Sun Jun 04 13:36:08 CST 2017]; root of context hierarchy
+[INFO ][20170604 13:36:08,400][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [config/spring/local/appcontext.xml]
+[ERROR][20170604 13:36:08,574][DubboProvider:31] == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config/spring/local/appcontext.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:409)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:539)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at tcc.DubboProvider.main(DubboProvider.java:28)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:687)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:435)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1735)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:1234)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:778)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:1038)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2988)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:389)
+	... 14 more
+[INFO ][20170604 13:36:17,342][AbstractApplicationContext:512] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@40550344: startup date [Sun Jun 04 13:36:17 CST 2017]; root of context hierarchy
+[INFO ][20170604 13:36:17,463][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [config/spring/local/appcontext.xml]
+[ERROR][20170604 13:36:17,637][DubboProvider:31] == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config/spring/local/appcontext.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:409)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:539)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at tcc.DubboProvider.main(DubboProvider.java:28)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:687)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:435)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1735)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:1234)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:778)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:1038)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2988)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:389)
+	... 14 more
+[INFO ][20170604 13:37:04,890][AbstractApplicationContext:512] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@40550344: startup date [Sun Jun 04 13:37:04 CST 2017]; root of context hierarchy
+[INFO ][20170604 13:37:05,029][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [config/spring/local/appcontext.xml]
+[ERROR][20170604 13:37:05,210][DubboProvider:31] == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config/spring/local/appcontext.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:409)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:539)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at tcc.DubboProvider.main(DubboProvider.java:28)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:687)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:435)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1735)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:1234)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:778)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:1038)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2988)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:389)
+	... 14 more
+[INFO ][20170604 13:46:05,749][AbstractApplicationContext:512] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c04fe90: startup date [Sun Jun 04 13:46:05 CST 2017]; root of context hierarchy
+[INFO ][20170604 13:46:05,894][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [config/spring/local/appcontext.xml]
+[ERROR][20170604 13:46:06,080][DubboProvider:31] == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config/spring/local/appcontext.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:409)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:539)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at tcc.DubboProvider.main(DubboProvider.java:28)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:687)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:435)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1735)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:1234)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:778)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:1038)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2988)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:389)
+	... 14 more
+[INFO ][20170604 13:47:03,470][AbstractApplicationContext:512] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1be4a61a: startup date [Sun Jun 04 13:47:03 CST 2017]; root of context hierarchy
+[INFO ][20170604 13:47:03,587][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [config/spring/local/appcontext.xml]
+[ERROR][20170604 13:47:03,767][DubboProvider:31] == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config/spring/local/appcontext.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:409)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:539)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at tcc.DubboProvider.main(DubboProvider.java:28)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:687)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:435)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1735)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:1234)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:778)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:1038)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2988)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:389)
+	... 14 more
+[INFO ][20170604 13:49:00,149][AbstractApplicationContext:512] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c04fe90: startup date [Sun Jun 04 13:49:00 CST 2017]; root of context hierarchy
+[INFO ][20170604 13:49:00,268][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [config/spring/local/appcontext.xml]
+[INFO ][20170604 13:49:00,822][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-dubbo-redpacket/target/classes/config/spring/local/appcontext-service-datasource.xml]
+[INFO ][20170604 13:49:00,975][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-dubbo-redpacket/target/classes/config/spring/local/appcontext-service-dao.xml]
+[INFO ][20170604 13:49:01,013][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-dubbo-redpacket/target/classes/config/spring/local/appcontext-service-provider.xml]
+[INFO ][20170604 13:49:01,139][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20170604 13:49:01,286][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-spring/target/classes/tcc-transaction.xml]
+[INFO ][20170604 13:49:02,039][PropertiesLoaderSupport:172] Loading properties file from class path resource [sample-dubbo-redpacket.properties]
+[INFO ][20170604 13:49:02,199][DefaultListableBeanFactory:603] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1a43bd4: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,redPacketAccountRepository,tradeOrderRepository,redPacketAccountService,redPacketTradeOrderService,org.springframework.aop.config.internalAutoProxyCreator,jdbc,redPacketDataSource,tccDataSource,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,sqlSessionFactory,redPacketAccountDao,tradeOrderDao,transactionRepository,sample-dubbo-redpacket,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,redPacketRpcZk,dubbo,com.alibaba.dubbo.config.ProviderConfig,org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService,org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService,tccApplicationContext,tccBeanPostProcessor,tccTransactionConfigurator,transactionRecovery,compensableTransactionInterceptor,resourceCoordinatorInterceptor,tccCompensableAspect,transactionContextAspect,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,recoverScheduler,recoverScheduledJob,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20170604 13:49:02,825][Slf4jMLog$Slf4jMLogger$InfoLogger:203] MLog clients using slf4j logging.
+[INFO ][20170604 13:49:03,445][Slf4jMLog$Slf4jMLogger$InfoLogger:203] Initializing c3p0-0.9.5-pre10 [built 06-November-2014 02:02:55 -0800; debug? true; trace: 10]
+[INFO ][20170604 13:49:03,700][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20170604 13:49:07,261][StdSchedulerFactory:1179] Using default implementation for ThreadExecutor
+[INFO ][20170604 13:49:07,308][SchedulerSignalerImpl:60] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ][20170604 13:49:07,311][QuartzScheduler:229] Quartz Scheduler v.1.8.6 created.
+[INFO ][20170604 13:49:07,313][RAMJobStore:139] RAMJobStore initialized.
+[INFO ][20170604 13:49:07,314][QuartzScheduler:255] Scheduler meta-data: Quartz Scheduler (v1.8.6) 'recoverScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[INFO ][20170604 13:49:07,315][StdSchedulerFactory:1324] Quartz scheduler 'recoverScheduler' initialized from an externally provided properties instance.
+[INFO ][20170604 13:49:07,316][StdSchedulerFactory:1328] Quartz scheduler version: 1.8.6
+[INFO ][20170604 13:49:07,319][QuartzScheduler:2267] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6e49c8f1
+[INFO ][20170604 13:49:07,539][QuartzScheduler:519] Scheduler recoverScheduler_$_NON_CLUSTERED started.
+[INFO ][20170604 13:49:07,558][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20170604 13:49:07,563][ServiceBean:107]  [DUBBO] The service ready on spring started. service: org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:07,756][ServiceConfig:510]  [DUBBO] Export dubbo service org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:07,756][ServiceConfig:470]  [DUBBO] Export dubbo service org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService to url dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:07,757][ServiceConfig:481]  [DUBBO] Register dubbo service org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService url dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586 to registry registry://192.168.1.200:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-redpacket&dubbo=2.5.3&file=./.dubbo/rpc-cache&pid=9616&register=true&registry=zookeeper&session=180000&subscribe=false&timeout=30000&timestamp=1496555347575, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,210][AbstractServer:69]  [DUBBO] Start NettyServer bind /0.0.0.0:20993, export /192.168.11.115:20993, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,266][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20170604 13:49:08,279][Environment:100] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+[INFO ][20170604 13:49:08,279][Environment:100] Client environment:host.name=SQIYHIFJCNC9FJ2
+[INFO ][20170604 13:49:08,280][Environment:100] Client environment:java.version=1.7.0_80
+[INFO ][20170604 13:49:08,280][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20170604 13:49:08,280][Environment:100] Client environment:java.home=D:\Program Files\Java\jdk1.7.0_80\jre
+[INFO ][20170604 13:49:08,280][Environment:100] Client environment:java.class.path=G:\project\tcc\tcc\tcc-transaction-dubbo-redpacket\target\test-classes;G:\project\tcc\tcc\tcc-transaction-dubbo-redpacket\target\classes;G:\project\tcc\tcc\tcc-transaction-dubbo-redpacket-api\target\classes;G:\project\tcc\tcc\tcc-transaction-api\target\classes;G:\project\tcc\tcc\tcc-transaction-spring\target\classes;G:\project\tcc\tcc\tcc-transaction-core\target\classes;G:\bbshop\babasportMaven\repository\com\google\guava\guava\19.0\guava-19.0.jar;G:\bbshop\babasportMaven\repository\com\esotericsoftware\kryo\4.0.0\kryo-4.0.0.jar;G:\bbshop\babasportMaven\repository\com\esotericsoftware\reflectasm\1.11.3\reflectasm-1.11.3.jar;G:\bbshop\babasportMaven\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;G:\bbshop\babasportMaven\repository\com\esotericsoftware\minlog\1.3.0\minlog-1.3.0.jar;G:\bbshop\babasportMaven\repository\org\objenesis\objenesis\2.2\objenesis-2.2.jar;G:\bbshop\babasportMaven\repository\redis\clients\jedis\2.8.0\jedis-2.8.0.jar;G:\bbshop\babasportMaven\repository\org\apache\commons\commons-pool2\2.3\commons-pool2-2.3.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-aop\3.2.12.RELEASE\spring-aop-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-context-support\3.2.12.RELEASE\spring-context-support-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\quartz-scheduler\quartz\1.8.6\quartz-1.8.6.jar;G:\bbshop\babasportMaven\repository\org\slf4j\slf4j-api\1.6.0\slf4j-api-1.6.0.jar;G:\bbshop\babasportMaven\repository\com\101tec\zkclient\0.4\zkclient-0.4.jar;G:\bbshop\babasportMaven\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;G:\bbshop\babasportMaven\repository\org\slf4j\slf4j-log4j12\1.6.1\slf4j-log4j12-1.6.1.jar;G:\bbshop\babasportMaven\repository\jline\jline\0.9.94\jline-0.9.94.jar;G:\bbshop\babasportMaven\repository\junit\junit\4.11\junit-4.11.jar;G:\bbshop\babasportMaven\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;G:\bbshop\babasportMaven\repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;G:\bbshop\babasportMaven\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;G:\bbshop\babasportMaven\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;G:\bbshop\babasportMaven\repository\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-context\3.2.12.RELEASE\spring-context-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-core\3.2.12.RELEASE\spring-core-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-expression\3.2.12.RELEASE\spring-expression-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;G:\bbshop\babasportMaven\repository\com\mchange\c3p0\0.9.5-pre10\c3p0-0.9.5-pre10.jar;G:\bbshop\babasportMaven\repository\com\mchange\mchange-commons-java\0.2.8\mchange-commons-java-0.2.8.jar;G:\bbshop\babasportMaven\repository\mysql\mysql-connector-java\5.1.33\mysql-connector-java-5.1.33.jar;G:\bbshop\babasportMaven\repository\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;G:\bbshop\babasportMaven\repository\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;G:\bbshop\babasportMaven\repository\org\aspectj\aspectjrt\1.6.11\aspectjrt-1.6.11.jar;G:\bbshop\babasportMaven\repository\org\aspectj\aspectjweaver\1.6.8\aspectjweaver-1.6.8.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-web\3.2.12.RELEASE\spring-web-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-webmvc\3.2.12.RELEASE\spring-webmvc-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-beans\3.2.12.RELEASE\spring-beans-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-jdbc\3.2.12.RELEASE\spring-jdbc-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-tx\3.2.12.RELEASE\spring-tx-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\apache\commons\commons-lang3\3.2.1\commons-lang3-3.2.1.jar
+[INFO ][20170604 13:49:08,280][Environment:100] Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_80\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;G:\bbshop\apache-maven-3.3.3\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.7.0_80\bin;D:\Program Files\Java\jdk1.7.0_80\bin;D:\Program Files\Java\jdk1.7.0_80\jre\bin;D:\Program Files\Git\cmd;.
+[INFO ][20170604 13:49:08,281][Environment:100] Client environment:java.io.tmpdir=C:\Users\Administrator.SQIYHIFJCNC9FJ2\AppData\Local\Temp\
+[INFO ][20170604 13:49:08,281][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20170604 13:49:08,281][Environment:100] Client environment:os.name=Windows 7
+[INFO ][20170604 13:49:08,281][Environment:100] Client environment:os.arch=amd64
+[INFO ][20170604 13:49:08,281][Environment:100] Client environment:os.version=6.1
+[INFO ][20170604 13:49:08,282][Environment:100] Client environment:user.name=Administrator
+[INFO ][20170604 13:49:08,282][Environment:100] Client environment:user.home=C:\Users\Administrator.SQIYHIFJCNC9FJ2
+[INFO ][20170604 13:49:08,282][Environment:100] Client environment:user.dir=G:\project\tcc\tcc\tcc-transaction-dubbo-redpacket
+[INFO ][20170604 13:49:08,283][ZooKeeper:438] Initiating client connection, connectString=192.168.1.200:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@63b9c8d4
+[INFO ][20170604 13:49:08,361][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170604 13:49:08,364][ClientCnxn$SendThread:852] Socket connection established to 192.168.1.200/192.168.1.200:2181, initiating session
+[INFO ][20170604 13:49:08,383][ClientCnxn$SendThread:1235] Session establishment complete on server 192.168.1.200/192.168.1.200:2181, sessionid = 0x15c4e3dd00a003b, negotiated timeout = 30000
+[INFO ][20170604 13:49:08,386][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20170604 13:49:08,388][AbstractRegistry:302]  [DUBBO] Register: dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,460][AbstractRegistry:325]  [DUBBO] Subscribe: provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,490][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, urls: [empty://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,547][ServiceBean:107]  [DUBBO] The service ready on spring started. service: org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,580][ServiceConfig:510]  [DUBBO] Export dubbo service org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,581][ServiceConfig:470]  [DUBBO] Export dubbo service org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService to url dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,581][ServiceConfig:481]  [DUBBO] Register dubbo service org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService url dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557 to registry registry://192.168.1.200:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-redpacket&dubbo=2.5.3&file=./.dubbo/rpc-cache&pid=9616&register=true&registry=zookeeper&session=180000&subscribe=false&timeout=30000&timestamp=1496555348557, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,584][AbstractRegistry:302]  [DUBBO] Register: dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,611][AbstractRegistry:325]  [DUBBO] Subscribe: provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,632][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557, urls: [empty://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:49:08,651][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20170604 13:50:00,149][Slf4jMLog$Slf4jMLogger$InfoLogger:203] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 30000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge35f9ovj7pl1xzhrq3|d3fcf2b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge35f9ovj7pl1xzhrq3|d3fcf2b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.1.100:3306/TCC?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[WARN ][20170604 13:50:00,435][AbstractServer:197]  [DUBBO] All clients has discontected from /192.168.11.115:20993. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:50:00,439][DubboProtocol$1:130]  [DUBBO] disconected from /192.168.11.115:61116,url:dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&channel.readonly.sent=true&codec=dubbo&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 14:02:31,565][Slf4jMLog$Slf4jMLogger$InfoLogger:203] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 30000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge35f9ovj7pl1xzhrq3|761a6acd, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge35f9ovj7pl1xzhrq3|761a6acd, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.1.100:3306/TCC_RED?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20170604 14:02:55,246][TransactionManager:100] ==>transaction begin commit()
+[INFO ][20170604 14:22:51,958][TransactionManager:100] ==>transaction begin commit()
+[WARN ][20170604 15:17:16,849][ClientCnxn$SendThread:1102] Session 0x15c4e3dd00a003b for server 192.168.1.200/192.168.1.200:2181, unexpected error, closing socket connection and attempting reconnect
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:68)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170604 15:17:17,011][ZkClient:449] zookeeper state changed (Disconnected)
+[INFO ][20170604 15:17:18,177][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN ][20170604 15:28:23,536][ClientCnxn$SendThread:1102] Session 0x15c4e3dd00a003b for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[WARN ][20170604 15:28:23,594][AbstractServer:197]  [DUBBO] All clients has discontected from /192.168.11.115:20993. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:23,691][DubboProtocol$1:130]  [DUBBO] disconected from /192.168.11.115:61205,url:dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&channel.readonly.sent=true&codec=dubbo&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, dubbo version: 2.5.3, current host: 127.0.0.1
+[WARN ][20170604 15:28:23,749][HeartBeatTask:84]  [DUBBO] Exception when heartbeat to remote channel /192.168.11.115:61205, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.remoting.RemotingException: Failed to send message Request [id=0, version=2.0.0, twoway=true, event=true, broken=false, data=null] to /192.168.11.115:61205, cause: 远程主机强迫关闭了一个现有的连接。
+	at com.alibaba.dubbo.remoting.transport.netty.NettyChannel.send(NettyChannel.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeChannel.send(HeaderExchangeChannel.java:87)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeChannel.send(HeaderExchangeChannel.java:77)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeartBeatTask.run(HeartBeatTask.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:304)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:492)
+	at org.jboss.netty.channel.socket.nio.SocketSendBufferPool$UnpooledSendBuffer.transferTo(SocketSendBufferPool.java:203)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.write0(AbstractNioWorker.java:202)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.writeFromTaskLoop(AbstractNioWorker.java:152)
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteTask.run(AbstractNioChannel.java:335)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:366)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:290)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	... 3 more
+[ERROR][20170604 15:28:24,136][JobRunShell:232] Job DEFAULT.transactionRecoveryJob threw an unhandled Exception: 
+org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'startRecover' on target class [class org.mengyun.tcctransaction.recover.TransactionRecovery] failed; nested exception is org.mengyun.tcctransaction.repository.TransactionIOException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,824 milliseconds ago.  The last packet sent successfully to the server was 683,837 milliseconds ago.
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:321)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:114)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549)
+Caused by: org.mengyun.tcctransaction.repository.TransactionIOException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,824 milliseconds ago.  The last packet sent successfully to the server was 683,837 milliseconds ago.
+	at org.mengyun.tcctransaction.repository.JdbcTransactionRepository.doFindAllUnmodifiedSince(JdbcTransactionRepository.java:245)
+	at org.mengyun.tcctransaction.repository.CachableTransactionRepository.findAllUnmodifiedSince(CachableTransactionRepository.java:106)
+	at org.mengyun.tcctransaction.recover.TransactionRecovery.loadErrorTransactions(TransactionRecovery.java:63)
+	at org.mengyun.tcctransaction.recover.TransactionRecovery.startRecover(TransactionRecovery.java:48)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:312)
+	... 3 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,824 milliseconds ago.  The last packet sent successfully to the server was 683,837 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3661)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2530)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1907)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2030)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:404)
+	at org.mengyun.tcctransaction.repository.JdbcTransactionRepository.doFindAllUnmodifiedSince(JdbcTransactionRepository.java:234)
+	... 11 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3643)
+	... 18 more
+[ERROR][20170604 15:28:24,162][ErrorLogger:2358] Job (DEFAULT.transactionRecoveryJob threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'startRecover' on target class [class org.mengyun.tcctransaction.recover.TransactionRecovery] failed; nested exception is org.mengyun.tcctransaction.repository.TransactionIOException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,824 milliseconds ago.  The last packet sent successfully to the server was 683,837 milliseconds ago.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:234)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549)
+Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'startRecover' on target class [class org.mengyun.tcctransaction.recover.TransactionRecovery] failed; nested exception is org.mengyun.tcctransaction.repository.TransactionIOException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,824 milliseconds ago.  The last packet sent successfully to the server was 683,837 milliseconds ago.
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:321)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:114)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223)
+	... 1 more
+Caused by: org.mengyun.tcctransaction.repository.TransactionIOException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,824 milliseconds ago.  The last packet sent successfully to the server was 683,837 milliseconds ago.
+	at org.mengyun.tcctransaction.repository.JdbcTransactionRepository.doFindAllUnmodifiedSince(JdbcTransactionRepository.java:245)
+	at org.mengyun.tcctransaction.repository.CachableTransactionRepository.findAllUnmodifiedSince(CachableTransactionRepository.java:106)
+	at org.mengyun.tcctransaction.recover.TransactionRecovery.loadErrorTransactions(TransactionRecovery.java:63)
+	at org.mengyun.tcctransaction.recover.TransactionRecovery.startRecover(TransactionRecovery.java:48)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:312)
+	... 3 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,824 milliseconds ago.  The last packet sent successfully to the server was 683,837 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3661)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2530)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1907)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2030)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:404)
+	at org.mengyun.tcctransaction.repository.JdbcTransactionRepository.doFindAllUnmodifiedSince(JdbcTransactionRepository.java:234)
+	... 11 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3643)
+	... 18 more
+[INFO ][20170604 15:28:24,753][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN ][20170604 15:28:24,754][ClientCnxn$SendThread:1102] Session 0x15c4e3dd00a003b for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170604 15:28:26,721][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN ][20170604 15:28:43,560][Slf4jMLog$Slf4jMLogger$WarnLogger:211] com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@35fc40b2 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+[WARN ][20170604 15:28:43,564][Slf4jMLog$Slf4jMLogger$WarnLogger:211] com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@35fc40b2 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@7833233c
+			on thread: C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovj7pl1xzhrq3|761a6acd]-HelperThread-#1
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@49bc03b6
+			on thread: C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovj7pl1xzhrq3|761a6acd]-HelperThread-#0
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@21754bc
+			on thread: C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovj7pl1xzhrq3|761a6acd]-HelperThread-#2
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@5697c78b
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@6ada317
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@71ae3e6d
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@6684a069
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@d3f8214
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4474f5d7
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@5ab8195d
+Pool thread stack traces:
+	Thread[C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovj7pl1xzhrq3|761a6acd]-HelperThread-#2,5,main]
+		java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+		java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:579)
+		java.net.Socket.connect(Socket.java:528)
+		java.net.Socket.<init>(Socket.java:425)
+		java.net.Socket.<init>(Socket.java:241)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:243)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:172)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1127)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1114)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1855)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+	Thread[C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovj7pl1xzhrq3|761a6acd]-HelperThread-#0,5,main]
+		java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+		java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:579)
+		java.net.Socket.connect(Socket.java:528)
+		java.net.Socket.<init>(Socket.java:425)
+		java.net.Socket.<init>(Socket.java:241)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:243)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:172)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1127)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1114)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1855)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+	Thread[C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovj7pl1xzhrq3|761a6acd]-HelperThread-#1,5,main]
+		java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+		java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:579)
+		java.net.Socket.connect(Socket.java:528)
+		java.net.Socket.<init>(Socket.java:425)
+		java.net.Socket.<init>(Socket.java:241)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:243)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:172)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1127)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1114)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1855)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+
+[WARN ][20170604 15:28:47,729][ClientCnxn$SendThread:1102] Session 0x15c4e3dd00a003b for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170604 15:28:49,026][DubboProtocol$1:130]  [DUBBO] disconected from /192.168.11.115:63120,url:dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&channel.readonly.sent=true&codec=dubbo&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:49,227][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170604 15:28:49,230][ClientCnxn$SendThread:852] Socket connection established to 192.168.1.200/192.168.1.200:2181, initiating session
+[INFO ][20170604 15:28:49,238][ClientCnxn$SendThread:1094] Unable to reconnect to ZooKeeper service, session 0x15c4e3dd00a003b has expired, closing socket connection
+[INFO ][20170604 15:28:49,239][ZkClient:449] zookeeper state changed (Expired)
+[INFO ][20170604 15:28:49,240][ZooKeeper:438] Initiating client connection, connectString=192.168.1.200:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@63b9c8d4
+[INFO ][20170604 15:28:49,247][FailbackRegistry:282]  [DUBBO] Recover register url [dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:49,248][FailbackRegistry:292]  [DUBBO] Recover subscribe url [provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:49,248][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170604 15:28:49,248][ClientCnxn$EventThread:512] EventThread shut down
+[INFO ][20170604 15:28:49,253][ClientCnxn$SendThread:852] Socket connection established to 192.168.1.200/192.168.1.200:2181, initiating session
+[INFO ][20170604 15:28:49,262][ClientCnxn$SendThread:1235] Session establishment complete on server 192.168.1.200/192.168.1.200:2181, sessionid = 0x15c4e3dd00a0046, negotiated timeout = 30000
+[INFO ][20170604 15:28:49,263][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20170604 15:28:49,272][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557, urls: [empty://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:49,280][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, urls: [empty://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:53,562][FailbackRegistry:309]  [DUBBO] Retry register [dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:53,872][FailbackRegistry:354]  [DUBBO] Retry subscribe {provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586=[com.alibaba.dubbo.registry.integration.RegistryProtocol$OverrideListener@10480b4e], provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557=[com.alibaba.dubbo.registry.integration.RegistryProtocol$OverrideListener@44e83db2]}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:53,974][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, urls: [empty://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:54,067][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557, urls: [empty://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService?anyhost=true&application=sample-dubbo-redpacket&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService&methods=getRedPacketAccountByUserId&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555348557], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:39:48,529][DubboProtocol$1:130]  [DUBBO] disconected from /192.168.11.115:63027,url:dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&channel.readonly.sent=true&codec=dubbo&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, dubbo version: 2.5.3, current host: 127.0.0.1
+[WARN ][20170604 15:39:50,496][AbstractServer:197]  [DUBBO] All clients has discontected from /192.168.11.115:20993. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:39:50,513][DubboProtocol$1:130]  [DUBBO] disconected from /192.168.11.115:63137,url:dubbo://192.168.11.115:20993/org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService?anyhost=true&application=sample-dubbo-redpacket&channel.readonly.sent=true&codec=dubbo&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService&methods=record&payload=52428800&pid=9616&retries=0&side=provider&timeout=60000&timestamp=1496555347586, dubbo version: 2.5.3, current host: 127.0.0.1

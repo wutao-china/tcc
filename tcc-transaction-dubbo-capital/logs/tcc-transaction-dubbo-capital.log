@@ -1,0 +1,506 @@
+[INFO ][20170604 13:51:23,301][AbstractApplicationContext:512] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@40550344: startup date [Sun Jun 04 13:51:23 CST 2017]; root of context hierarchy
+[INFO ][20170604 13:51:23,438][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-dubbo-capital/target/classes/config/spring/local/appcontext.xml]
+[INFO ][20170604 13:51:23,985][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-dubbo-capital/target/classes/config/spring/local/appcontext-service-datasource.xml]
+[INFO ][20170604 13:51:24,121][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-dubbo-capital/target/classes/config/spring/local/appcontext-service-dao.xml]
+[INFO ][20170604 13:51:24,168][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-dubbo-capital/target/classes/config/spring/local/appcontext-service-provider.xml]
+[INFO ][20170604 13:51:24,301][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20170604 13:51:24,409][XmlBeanDefinitionReader:316] Loading XML bean definitions from URL [file:/G:/project/tcc/tcc/tcc-transaction-spring/target/classes/tcc-transaction.xml]
+[INFO ][20170604 13:51:24,814][PropertiesLoaderSupport:172] Loading properties file from class path resource [sample-dubbo-capital.properties]
+[INFO ][20170604 13:51:24,964][DefaultListableBeanFactory:603] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@70008a45: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,capitalAccountRepository,tradeOrderRepository,capitalAccountService,capitalTradeOrderService,org.springframework.aop.config.internalAutoProxyCreator,jdbc,capitalDataSource,tccDataSource,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,sqlSessionFactory,capitalAccountDao,tradeOrderDao,org.mengyun.tcctransaction.spring.recover.DefaultRecoverConfig#0,transactionRepository,sample-dubbo-capital,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,capitalRpcZk,dubbo,com.alibaba.dubbo.config.ProviderConfig,org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService,org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService,tccApplicationContext,tccBeanPostProcessor,tccTransactionConfigurator,transactionRecovery,compensableTransactionInterceptor,resourceCoordinatorInterceptor,tccCompensableAspect,transactionContextAspect,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,recoverScheduler,recoverScheduledJob,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20170604 13:51:25,572][Slf4jMLog$Slf4jMLogger$InfoLogger:203] MLog clients using slf4j logging.
+[INFO ][20170604 13:51:25,910][Slf4jMLog$Slf4jMLogger$InfoLogger:203] Initializing c3p0-0.9.5-pre10 [built 06-November-2014 02:02:55 -0800; debug? true; trace: 10]
+[INFO ][20170604 13:51:26,119][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20170604 13:51:29,255][StdSchedulerFactory:1179] Using default implementation for ThreadExecutor
+[INFO ][20170604 13:51:29,279][SchedulerSignalerImpl:60] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ][20170604 13:51:29,281][QuartzScheduler:229] Quartz Scheduler v.1.8.6 created.
+[INFO ][20170604 13:51:29,282][RAMJobStore:139] RAMJobStore initialized.
+[INFO ][20170604 13:51:29,284][QuartzScheduler:255] Scheduler meta-data: Quartz Scheduler (v1.8.6) 'recoverScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[INFO ][20170604 13:51:29,285][StdSchedulerFactory:1324] Quartz scheduler 'recoverScheduler' initialized from an externally provided properties instance.
+[INFO ][20170604 13:51:29,286][StdSchedulerFactory:1328] Quartz scheduler version: 1.8.6
+[INFO ][20170604 13:51:29,289][QuartzScheduler:2267] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@294205f4
+[INFO ][20170604 13:51:29,511][QuartzScheduler:519] Scheduler recoverScheduler_$_NON_CLUSTERED started.
+[INFO ][20170604 13:51:29,526][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20170604 13:51:29,531][ServiceBean:107]  [DUBBO] The service ready on spring started. service: org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:29,720][ServiceConfig:510]  [DUBBO] Export dubbo service org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:29,721][ServiceConfig:470]  [DUBBO] Export dubbo service org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService to url dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:29,722][ServiceConfig:481]  [DUBBO] Register dubbo service org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService url dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554 to registry registry://192.168.1.200:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-capital&dubbo=2.5.3&file=./.dubbo/rpc-cache&pid=9868&register=true&registry=zookeeper&session=180000&subscribe=false&timeout=30000&timestamp=1496555489542, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,130][AbstractServer:69]  [DUBBO] Start NettyServer bind /0.0.0.0:20991, export /192.168.11.115:20991, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,187][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20170604 13:51:30,197][Environment:100] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+[INFO ][20170604 13:51:30,197][Environment:100] Client environment:host.name=SQIYHIFJCNC9FJ2
+[INFO ][20170604 13:51:30,197][Environment:100] Client environment:java.version=1.7.0_80
+[INFO ][20170604 13:51:30,197][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20170604 13:51:30,198][Environment:100] Client environment:java.home=D:\Program Files\Java\jdk1.7.0_80\jre
+[INFO ][20170604 13:51:30,198][Environment:100] Client environment:java.class.path=G:\project\tcc\tcc\tcc-transaction-dubbo-capital\target\test-classes;G:\project\tcc\tcc\tcc-transaction-dubbo-capital\target\classes;G:\project\tcc\tcc\tcc-transaction-dubbo-capital-api\target\classes;G:\project\tcc\tcc\tcc-transaction-api\target\classes;G:\project\tcc\tcc\tcc-transaction-spring\target\classes;G:\project\tcc\tcc\tcc-transaction-core\target\classes;G:\bbshop\babasportMaven\repository\com\google\guava\guava\19.0\guava-19.0.jar;G:\bbshop\babasportMaven\repository\com\esotericsoftware\kryo\4.0.0\kryo-4.0.0.jar;G:\bbshop\babasportMaven\repository\com\esotericsoftware\reflectasm\1.11.3\reflectasm-1.11.3.jar;G:\bbshop\babasportMaven\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;G:\bbshop\babasportMaven\repository\com\esotericsoftware\minlog\1.3.0\minlog-1.3.0.jar;G:\bbshop\babasportMaven\repository\org\objenesis\objenesis\2.2\objenesis-2.2.jar;G:\bbshop\babasportMaven\repository\redis\clients\jedis\2.8.0\jedis-2.8.0.jar;G:\bbshop\babasportMaven\repository\org\apache\commons\commons-pool2\2.3\commons-pool2-2.3.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-aop\3.2.12.RELEASE\spring-aop-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-context-support\3.2.12.RELEASE\spring-context-support-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\quartz-scheduler\quartz\1.8.6\quartz-1.8.6.jar;G:\bbshop\babasportMaven\repository\org\slf4j\slf4j-api\1.6.0\slf4j-api-1.6.0.jar;G:\bbshop\babasportMaven\repository\com\101tec\zkclient\0.4\zkclient-0.4.jar;G:\bbshop\babasportMaven\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;G:\bbshop\babasportMaven\repository\org\slf4j\slf4j-log4j12\1.6.1\slf4j-log4j12-1.6.1.jar;G:\bbshop\babasportMaven\repository\jline\jline\0.9.94\jline-0.9.94.jar;G:\bbshop\babasportMaven\repository\junit\junit\4.11\junit-4.11.jar;G:\bbshop\babasportMaven\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;G:\bbshop\babasportMaven\repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;G:\bbshop\babasportMaven\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;G:\bbshop\babasportMaven\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;G:\bbshop\babasportMaven\repository\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-context\3.2.12.RELEASE\spring-context-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-core\3.2.12.RELEASE\spring-core-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-expression\3.2.12.RELEASE\spring-expression-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;G:\bbshop\babasportMaven\repository\com\mchange\c3p0\0.9.5-pre10\c3p0-0.9.5-pre10.jar;G:\bbshop\babasportMaven\repository\com\mchange\mchange-commons-java\0.2.8\mchange-commons-java-0.2.8.jar;G:\bbshop\babasportMaven\repository\mysql\mysql-connector-java\5.1.33\mysql-connector-java-5.1.33.jar;G:\bbshop\babasportMaven\repository\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;G:\bbshop\babasportMaven\repository\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;G:\bbshop\babasportMaven\repository\org\aspectj\aspectjrt\1.6.11\aspectjrt-1.6.11.jar;G:\bbshop\babasportMaven\repository\org\aspectj\aspectjweaver\1.6.8\aspectjweaver-1.6.8.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-web\3.2.12.RELEASE\spring-web-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-webmvc\3.2.12.RELEASE\spring-webmvc-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-beans\3.2.12.RELEASE\spring-beans-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-jdbc\3.2.12.RELEASE\spring-jdbc-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\springframework\spring-tx\3.2.12.RELEASE\spring-tx-3.2.12.RELEASE.jar;G:\bbshop\babasportMaven\repository\org\apache\commons\commons-lang3\3.2.1\commons-lang3-3.2.1.jar
+[INFO ][20170604 13:51:30,198][Environment:100] Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_80\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;G:\bbshop\apache-maven-3.3.3\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.7.0_80\bin;D:\Program Files\Java\jdk1.7.0_80\bin;D:\Program Files\Java\jdk1.7.0_80\jre\bin;D:\Program Files\Git\cmd;.
+[INFO ][20170604 13:51:30,198][Environment:100] Client environment:java.io.tmpdir=C:\Users\Administrator.SQIYHIFJCNC9FJ2\AppData\Local\Temp\
+[INFO ][20170604 13:51:30,198][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20170604 13:51:30,199][Environment:100] Client environment:os.name=Windows 7
+[INFO ][20170604 13:51:30,199][Environment:100] Client environment:os.arch=amd64
+[INFO ][20170604 13:51:30,199][Environment:100] Client environment:os.version=6.1
+[INFO ][20170604 13:51:30,199][Environment:100] Client environment:user.name=Administrator
+[INFO ][20170604 13:51:30,199][Environment:100] Client environment:user.home=C:\Users\Administrator.SQIYHIFJCNC9FJ2
+[INFO ][20170604 13:51:30,200][Environment:100] Client environment:user.dir=G:\project\tcc\tcc\tcc-transaction-dubbo-capital
+[INFO ][20170604 13:51:30,201][ZooKeeper:438] Initiating client connection, connectString=192.168.1.200:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@51b5d7cb
+[INFO ][20170604 13:51:30,230][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170604 13:51:30,233][ClientCnxn$SendThread:852] Socket connection established to 192.168.1.200/192.168.1.200:2181, initiating session
+[INFO ][20170604 13:51:30,249][ClientCnxn$SendThread:1235] Session establishment complete on server 192.168.1.200/192.168.1.200:2181, sessionid = 0x15c4e3dd00a003d, negotiated timeout = 30000
+[INFO ][20170604 13:51:30,251][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20170604 13:51:30,254][AbstractRegistry:302]  [DUBBO] Register: dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,405][AbstractRegistry:325]  [DUBBO] Subscribe: provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,436][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554, urls: [empty://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,490][ServiceBean:107]  [DUBBO] The service ready on spring started. service: org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,527][ServiceConfig:510]  [DUBBO] Export dubbo service org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,528][ServiceConfig:470]  [DUBBO] Export dubbo service org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService to url dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,528][ServiceConfig:481]  [DUBBO] Register dubbo service org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService url dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500 to registry registry://192.168.1.200:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-capital&dubbo=2.5.3&file=./.dubbo/rpc-cache&pid=9868&register=true&registry=zookeeper&session=180000&subscribe=false&timeout=30000&timestamp=1496555490499, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,531][AbstractRegistry:302]  [DUBBO] Register: dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,559][AbstractRegistry:325]  [DUBBO] Subscribe: provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,606][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500, urls: [empty://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 13:51:30,624][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20170604 13:52:00,102][Slf4jMLog$Slf4jMLogger$InfoLogger:203] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 30000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge35f9ovjarpwwlcmq1|111e1d7b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge35f9ovjarpwwlcmq1|111e1d7b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.1.100:3306/TCC?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20170604 14:02:31,165][Slf4jMLog$Slf4jMLogger$InfoLogger:203] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 30000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge35f9ovjarpwwlcmq1|2340ec7c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge35f9ovjarpwwlcmq1|2340ec7c, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.1.100:3306/TCC_CAP?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20170604 14:02:55,045][TransactionManager:100] ==>transaction begin commit()
+[ERROR][20170604 14:21:44,977][ExceptionFilter:87]  [DUBBO] Got unchecked and undeclared exception which called by 192.168.11.115. service: org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService, method: record, exception: java.lang.RuntimeException: not enough balance!, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.RuntimeException: not enough balance!
+	at org.mengyun.tcctransaction.sample.dubbo.capital.domain.entity.CapitalAccount.transferFrom(CapitalAccount.java:45)
+	at org.mengyun.tcctransaction.sample.dubbo.capital.service.CapitalTradeOrderServiceImpl.record(CapitalTradeOrderServiceImpl.java:56)
+	at org.mengyun.tcctransaction.sample.dubbo.capital.service.CapitalTradeOrderServiceImpl$$FastClassBySpringCGLIB$$821ba249.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:91)
+	at org.mengyun.tcctransaction.interceptor.ResourceCoordinatorInterceptor.interceptTransactionContextMethod(ResourceCoordinatorInterceptor.java:82)
+	at org.mengyun.tcctransaction.spring.TccTransactionContextAspect.interceptTransactionContextMethod(TccTransactionContextAspect.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:161)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:80)
+	at org.mengyun.tcctransaction.interceptor.CompensableTransactionInterceptor.providerMethodProceed(CompensableTransactionInterceptor.java:119)
+	at org.mengyun.tcctransaction.interceptor.CompensableTransactionInterceptor.interceptCompensableMethod(CompensableTransactionInterceptor.java:65)
+	at org.mengyun.tcctransaction.spring.TccCompensableAspect.interceptCompensableMethod(TccCompensableAspect.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:161)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at org.mengyun.tcctransaction.sample.dubbo.capital.service.CapitalTradeOrderServiceImpl$$EnhancerBySpringCGLIB$$63c0bb5c.record(<generated>)
+	at com.alibaba.dubbo.common.bytecode.Wrapper0.invokeMethod(Wrapper0.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO ][20170604 14:21:45,238][TransactionManager:128] ==>transaction begin rollback()
+[ERROR][20170604 14:22:32,294][ExceptionFilter:87]  [DUBBO] Got unchecked and undeclared exception which called by 192.168.11.115. service: org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService, method: record, exception: java.lang.RuntimeException: not enough balance!, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.RuntimeException: not enough balance!
+	at org.mengyun.tcctransaction.sample.dubbo.capital.domain.entity.CapitalAccount.transferFrom(CapitalAccount.java:45)
+	at org.mengyun.tcctransaction.sample.dubbo.capital.service.CapitalTradeOrderServiceImpl.record(CapitalTradeOrderServiceImpl.java:56)
+	at org.mengyun.tcctransaction.sample.dubbo.capital.service.CapitalTradeOrderServiceImpl$$FastClassBySpringCGLIB$$821ba249.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:91)
+	at org.mengyun.tcctransaction.interceptor.ResourceCoordinatorInterceptor.interceptTransactionContextMethod(ResourceCoordinatorInterceptor.java:82)
+	at org.mengyun.tcctransaction.spring.TccTransactionContextAspect.interceptTransactionContextMethod(TccTransactionContextAspect.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:161)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:80)
+	at org.mengyun.tcctransaction.interceptor.CompensableTransactionInterceptor.providerMethodProceed(CompensableTransactionInterceptor.java:119)
+	at org.mengyun.tcctransaction.interceptor.CompensableTransactionInterceptor.interceptCompensableMethod(CompensableTransactionInterceptor.java:65)
+	at org.mengyun.tcctransaction.spring.TccCompensableAspect.interceptCompensableMethod(TccCompensableAspect.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:161)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at org.mengyun.tcctransaction.sample.dubbo.capital.service.CapitalTradeOrderServiceImpl$$EnhancerBySpringCGLIB$$63c0bb5c.record(<generated>)
+	at com.alibaba.dubbo.common.bytecode.Wrapper0.invokeMethod(Wrapper0.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO ][20170604 14:22:32,400][TransactionManager:128] ==>transaction begin rollback()
+[INFO ][20170604 14:22:51,879][TransactionManager:100] ==>transaction begin commit()
+[WARN ][20170604 15:17:16,863][ClientCnxn$SendThread:1102] Session 0x15c4e3dd00a003d for server 192.168.1.200/192.168.1.200:2181, unexpected error, closing socket connection and attempting reconnect
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:68)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170604 15:17:16,977][ZkClient:449] zookeeper state changed (Disconnected)
+[INFO ][20170604 15:28:23,589][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN ][20170604 15:28:23,755][ClientCnxn$SendThread:1102] Session 0x15c4e3dd00a003d for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[WARN ][20170604 15:28:23,764][AbstractServer:197]  [DUBBO] All clients has discontected from /192.168.11.115:20991. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:23,774][DubboProtocol$1:130]  [DUBBO] disconected from /192.168.11.115:61173,url:dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&channel.readonly.sent=true&codec=dubbo&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554, dubbo version: 2.5.3, current host: 127.0.0.1
+[WARN ][20170604 15:28:23,757][AbstractServer:197]  [DUBBO] All clients has discontected from /192.168.11.115:20991. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+[WARN ][20170604 15:28:23,832][HeartBeatTask:84]  [DUBBO] Exception when heartbeat to remote channel /192.168.11.115:61173, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.remoting.RemotingException: Failed to send message Request [id=0, version=2.0.0, twoway=true, event=true, broken=false, data=null] to /192.168.11.115:61173, cause: null
+	at com.alibaba.dubbo.remoting.transport.netty.NettyChannel.send(NettyChannel.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeChannel.send(HeaderExchangeChannel.java:87)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeChannel.send(HeaderExchangeChannel.java:77)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeartBeatTask.run(HeartBeatTask.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:304)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.ClosedChannelException
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.cleanUpWriteBuffer(AbstractNioWorker.java:434)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.close(AbstractNioWorker.java:374)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:93)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	... 3 more
+[ERROR][20170604 15:28:24,024][JobRunShell:232] Job DEFAULT.transactionRecoveryJob threw an unhandled Exception: 
+org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'startRecover' on target class [class org.mengyun.tcctransaction.recover.TransactionRecovery] failed; nested exception is org.mengyun.tcctransaction.repository.TransactionIOException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,939 milliseconds ago.  The last packet sent successfully to the server was 683,946 milliseconds ago.
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:321)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:114)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549)
+Caused by: org.mengyun.tcctransaction.repository.TransactionIOException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,939 milliseconds ago.  The last packet sent successfully to the server was 683,946 milliseconds ago.
+	at org.mengyun.tcctransaction.repository.JdbcTransactionRepository.doFindAllUnmodifiedSince(JdbcTransactionRepository.java:245)
+	at org.mengyun.tcctransaction.repository.CachableTransactionRepository.findAllUnmodifiedSince(CachableTransactionRepository.java:106)
+	at org.mengyun.tcctransaction.recover.TransactionRecovery.loadErrorTransactions(TransactionRecovery.java:63)
+	at org.mengyun.tcctransaction.recover.TransactionRecovery.startRecover(TransactionRecovery.java:48)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:312)
+	... 3 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,939 milliseconds ago.  The last packet sent successfully to the server was 683,946 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3661)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2530)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1907)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2030)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:404)
+	at org.mengyun.tcctransaction.repository.JdbcTransactionRepository.doFindAllUnmodifiedSince(JdbcTransactionRepository.java:234)
+	... 11 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3643)
+	... 18 more
+[ERROR][20170604 15:28:24,030][ErrorLogger:2358] Job (DEFAULT.transactionRecoveryJob threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'startRecover' on target class [class org.mengyun.tcctransaction.recover.TransactionRecovery] failed; nested exception is org.mengyun.tcctransaction.repository.TransactionIOException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,939 milliseconds ago.  The last packet sent successfully to the server was 683,946 milliseconds ago.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:234)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549)
+Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'startRecover' on target class [class org.mengyun.tcctransaction.recover.TransactionRecovery] failed; nested exception is org.mengyun.tcctransaction.repository.TransactionIOException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,939 milliseconds ago.  The last packet sent successfully to the server was 683,946 milliseconds ago.
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:321)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:114)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223)
+	... 1 more
+Caused by: org.mengyun.tcctransaction.repository.TransactionIOException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,939 milliseconds ago.  The last packet sent successfully to the server was 683,946 milliseconds ago.
+	at org.mengyun.tcctransaction.repository.JdbcTransactionRepository.doFindAllUnmodifiedSince(JdbcTransactionRepository.java:245)
+	at org.mengyun.tcctransaction.repository.CachableTransactionRepository.findAllUnmodifiedSince(CachableTransactionRepository.java:106)
+	at org.mengyun.tcctransaction.recover.TransactionRecovery.loadErrorTransactions(TransactionRecovery.java:63)
+	at org.mengyun.tcctransaction.recover.TransactionRecovery.startRecover(TransactionRecovery.java:48)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:312)
+	... 3 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 683,939 milliseconds ago.  The last packet sent successfully to the server was 683,946 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3661)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2530)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1907)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2030)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:404)
+	at org.mengyun.tcctransaction.repository.JdbcTransactionRepository.doFindAllUnmodifiedSince(JdbcTransactionRepository.java:234)
+	... 11 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3643)
+	... 18 more
+[INFO ][20170604 15:28:23,857][DubboProtocol$1:130]  [DUBBO] disconected from /192.168.11.115:61206,url:dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&channel.readonly.sent=true&codec=dubbo&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:25,189][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN ][20170604 15:28:25,200][ClientCnxn$SendThread:1102] Session 0x15c4e3dd00a003d for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170604 15:28:26,337][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN ][20170604 15:28:38,548][Slf4jMLog$Slf4jMLogger$WarnLogger:211] com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@623c3ed8 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+[WARN ][20170604 15:28:38,624][Slf4jMLog$Slf4jMLogger$WarnLogger:211] com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@623c3ed8 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@7759a4ad
+			on thread: C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovjarpwwlcmq1|2340ec7c]-HelperThread-#2
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@79e249c6
+			on thread: C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovjarpwwlcmq1|2340ec7c]-HelperThread-#0
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@577a517b
+			on thread: C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovjarpwwlcmq1|2340ec7c]-HelperThread-#1
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1f7b8f1b
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@68f045c2
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@7673f960
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@37f94a61
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4f8242fc
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@70fbd72b
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@25eb8200
+Pool thread stack traces:
+	Thread[C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovjarpwwlcmq1|2340ec7c]-HelperThread-#0,5,main]
+		java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+		java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:579)
+		java.net.Socket.connect(Socket.java:528)
+		java.net.Socket.<init>(Socket.java:425)
+		java.net.Socket.<init>(Socket.java:241)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:243)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:172)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1127)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1114)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1855)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+	Thread[C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovjarpwwlcmq1|2340ec7c]-HelperThread-#2,5,main]
+		java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+		java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:579)
+		java.net.Socket.connect(Socket.java:528)
+		java.net.Socket.<init>(Socket.java:425)
+		java.net.Socket.<init>(Socket.java:241)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:243)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:172)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1127)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1114)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1855)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+	Thread[C3P0PooledConnectionPoolManager[identityToken->1hge35f9ovjarpwwlcmq1|2340ec7c]-HelperThread-#1,5,main]
+		java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+		java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:579)
+		java.net.Socket.connect(Socket.java:528)
+		java.net.Socket.<init>(Socket.java:425)
+		java.net.Socket.<init>(Socket.java:241)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:243)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:172)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1127)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1114)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+		com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1855)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+
+[WARN ][20170604 15:28:47,347][ClientCnxn$SendThread:1102] Session 0x15c4e3dd00a003d for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170604 15:28:48,691][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170604 15:28:48,694][ClientCnxn$SendThread:852] Socket connection established to 192.168.1.200/192.168.1.200:2181, initiating session
+[INFO ][20170604 15:28:48,710][ClientCnxn$SendThread:1094] Unable to reconnect to ZooKeeper service, session 0x15c4e3dd00a003d has expired, closing socket connection
+[INFO ][20170604 15:28:48,710][ZkClient:449] zookeeper state changed (Expired)
+[INFO ][20170604 15:28:48,712][ZooKeeper:438] Initiating client connection, connectString=192.168.1.200:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@51b5d7cb
+[INFO ][20170604 15:28:48,724][FailbackRegistry:282]  [DUBBO] Recover register url [dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500, dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:48,730][ClientCnxn$SendThread:975] Opening socket connection to server 192.168.1.200/192.168.1.200:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170604 15:28:48,732][ClientCnxn$EventThread:512] EventThread shut down
+[INFO ][20170604 15:28:48,737][FailbackRegistry:292]  [DUBBO] Recover subscribe url [provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554, provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:48,740][ClientCnxn$SendThread:852] Socket connection established to 192.168.1.200/192.168.1.200:2181, initiating session
+[INFO ][20170604 15:28:48,750][ClientCnxn$SendThread:1235] Session establishment complete on server 192.168.1.200/192.168.1.200:2181, sessionid = 0x15c4e3dd00a0044, negotiated timeout = 30000
+[INFO ][20170604 15:28:48,750][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20170604 15:28:48,759][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554, urls: [empty://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:48,779][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500, urls: [empty://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:48,854][DubboProtocol$1:130]  [DUBBO] disconected from /192.168.11.115:63029,url:dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&channel.readonly.sent=true&codec=dubbo&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:53,562][FailbackRegistry:309]  [DUBBO] Retry register [dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500, dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:53,900][FailbackRegistry:354]  [DUBBO] Retry subscribe {provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554=[com.alibaba.dubbo.registry.integration.RegistryProtocol$OverrideListener@1e9ee58d], provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500=[com.alibaba.dubbo.registry.integration.RegistryProtocol$OverrideListener@662f4d8a]}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:53,996][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554, urls: [empty://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:28:54,074][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500, urls: [empty://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService?anyhost=true&application=sample-dubbo-capital&category=configurators&check=false&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService&methods=getCapitalAccountByUserId&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555490500], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170604 15:39:48,520][DubboProtocol$1:130]  [DUBBO] disconected from /192.168.11.115:63028,url:dubbo://192.168.11.115:20991/org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService?anyhost=true&application=sample-dubbo-capital&channel.readonly.sent=true&codec=dubbo&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&heartbeat=60000&interface=org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService&methods=record&payload=52428800&pid=9868&retries=0&side=provider&timeout=60000&timestamp=1496555489554, dubbo version: 2.5.3, current host: 127.0.0.1
